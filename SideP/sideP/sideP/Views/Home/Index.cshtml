@@ -5,4 +5,43 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form name="logininfo" id="logininfo">
+    <div>
+        <label>帳號：</label><input type="text" name="email" placeholder="Account...">
+    </div>
+        <div>
+            <label>密碼：</label><input type="password" name="password" placeholder="Password...">
+        </div>
+        <div>
+            <input id="btnLogin" type="button" value="登入">
+            <input id="btnreset" type="reset" hidden>
+        </div>
+    </form>
 </div>
+@section Scripts
+{
+    <script>
+            $("#btnLogin").click(SendLoginInfo);
+       function SendLoginInfo(){
+           event.preventDefault();
+              $.ajax({
+              method:"post",
+              url:"Account/Login",
+              contentType:false,
+              processData:false,
+              data:new FormData($("#logininfo")[0]),
+              success:function (data){
+                  if (data==true){
+                           window.location="Home/Privacy";  
+                           return; 
+                  }else{
+                       $("#btnreset").click();
+                                        alert("帳號或密碼錯誤!請重新在試...");
+                  }    
+                 
+              }
+          })
+       }
+    </script>
+}
+
