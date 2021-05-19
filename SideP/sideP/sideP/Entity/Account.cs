@@ -15,11 +15,7 @@ namespace sideP.Entity
         public DateTime Birth { get; set; }
         public bool AccountValidation(string email, string password)
         {
-            if (Email == email && Password == password)
-            {
-                return true;
-            }
-            return false;
+            return Email == email && Password == password;
         }
     }
 }
