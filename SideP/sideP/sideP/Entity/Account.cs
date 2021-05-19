@@ -10,7 +10,9 @@ namespace sideP.Entity
     {
         public string Email { get; set; } = "asd123@gmail.com";
         public string Password { get; set; } = "asd123";
-
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public DateTime Birth { get; set; }
         public bool AccountValidation(string email, string password)
         {
             if (Email == email && Password == password)

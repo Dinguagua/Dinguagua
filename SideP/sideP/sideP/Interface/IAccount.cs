@@ -9,6 +9,10 @@ namespace sideP.Interface
     {
         public string Email { get; set; }
         public string Password { get; set; }
+        public string Name { get;set; }
+        public string Address { get; set; }
+        public DateTime Birth { get; set; }
+        
         public bool AccountValidation(string email, string password);
     }
 }

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using sideP.Entity;
 
 namespace sideP.Controllers
 {
@@ -18,6 +19,12 @@ namespace sideP.Controllers
         public bool Login(string email, string password)
         {
             return _account.AccountValidation(email, password);
+        }
+
+        public IActionResult Register(Account userinfo)
+        {
+            
+            return Ok() ;
         }
     }
 }

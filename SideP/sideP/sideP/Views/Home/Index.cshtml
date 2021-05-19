@@ -22,7 +22,7 @@
 {
     <script>
             $("#btnLogin").click(SendLoginInfo);
-       function SendLoginInfo(){
+     function SendLoginInfo(){
            event.preventDefault();
               $.ajax({
               method:"post",
@@ -37,8 +37,7 @@
                   }else{
                        $("#btnreset").click();
                                         alert("帳號或密碼錯誤!請重新在試...");
-                  }    
-                 
+                  }            
               }
           })
        }

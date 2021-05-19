@@ -22,4 +22,8 @@ RUN dotnet publish "sideP.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+#FROM mongo 
+#MAINTAINER tzuan
+#LABEL description="mongo測試環境" owner="鼎瓜瓜"
 ENTRYPOINT ["dotnet", "sideP.dll"]
