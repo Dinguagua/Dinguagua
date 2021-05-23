@@ -1,0 +1,10 @@
+2021/05/23 15:58:11[Information] Starting web host
+2021/05/23 15:58:15[Debug] Handled"/"
+2021/05/23 15:58:18[Debug] Handled"/Account/Login"
+2021/05/23 15:58:22[Debug] Handled"/Account/Login"
+2021/05/23 15:58:22[Debug] Handled"/Home/Privacy"
+2021/05/23 15:59:17[Information] Starting web host
+2021/05/23 15:59:22[Information] HTTP "GET" "/" responded 200 in 228.5744 ms
+2021/05/23 15:59:27[Information] HTTP "POST" "/Account/Login" responded 200 in 54.6252 ms
+2021/05/23 15:59:30[Information] HTTP "POST" "/Account/Login" responded 200 in 18.9519 ms
+2021/05/23 15:59:30[Information] HTTP "GET" "/Home/Privacy" responded 200 in 24.5053 ms

@@ -1,0 +1,5 @@
+[16:03:53 INF] Starting web host {}
+[16:03:57 DBG] Handled/ {"RequestHost":"localhost:5001","RequestScheme":"https","RequestMethod":"GET","StatusCode":200,"Elapsed":245.8212,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"}
+[16:03:59 DBG] Handled/Account/Login {"RequestHost":"localhost:5001","RequestScheme":"https","RequestMethod":"POST","StatusCode":200,"Elapsed":56.0344,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"}
+[16:04:03 DBG] Handled/Account/Login {"RequestHost":"localhost:5001","RequestScheme":"https","RequestMethod":"POST","StatusCode":200,"Elapsed":19.9616,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"}
+[16:04:03 DBG] Handled/Home/Privacy {"RequestHost":"localhost:5001","RequestScheme":"https","RequestMethod":"GET","StatusCode":200,"Elapsed":23.8183,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"}

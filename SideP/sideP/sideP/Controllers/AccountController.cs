@@ -5,13 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using sideP.Entity;
+using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace sideP.Controllers
 {
+   
     public class AccountController : Controller
     {
         private readonly IAccount _account;
-
         public AccountController(IAccount account)
         {
             _account = account;
@@ -23,7 +25,6 @@ namespace sideP.Controllers
 
         public IActionResult Register(Account userinfo)
         {
-            
             return Ok() ;
         }
     }

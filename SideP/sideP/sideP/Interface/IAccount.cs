@@ -12,7 +12,8 @@ namespace sideP.Interface
         public string Name { get;set; }
         public string Address { get; set; }
         public DateTime Birth { get; set; }
-        
+        public int Phone { get; set; }
+
         public bool AccountValidation(string email, string password);
     }
 }

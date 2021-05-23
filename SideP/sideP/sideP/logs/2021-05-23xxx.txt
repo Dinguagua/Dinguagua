@@ -1,0 +1,6 @@
+[16:06:11 INF] Starting web host {}
+[16:06:16 INF] HTTP GET / responded 200 in 236.0539 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"}
+[16:06:19 INF] HTTP POST /Account/Login responded 200 in 55.0187 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"}
+[16:06:22 INF] HTTP POST /Account/Login responded 200 in 18.6795 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"}
+[16:06:22 INF] HTTP GET /Home/Privacy responded 200 in 23.1895 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware"}
+[16:08:27 INF] Starting web host {}

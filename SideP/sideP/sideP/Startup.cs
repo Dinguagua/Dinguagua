@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Serilog;
+using Serilog.Events;
 
 namespace sideP
 {
@@ -43,6 +45,18 @@ namespace sideP
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+            //app.UseSerilogRequestLogging(options =>
+            //{
+            //    options.MessageTemplate = "Handled{RequestPath}";
+            //    options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+            //    options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+            //    {
+            //        diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+            //        diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+            //    };
+
+            //});
+            app.UseSerilogRequestLogging();
             app.UseStaticFiles();
 
             app.UseRouting();
